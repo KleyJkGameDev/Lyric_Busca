@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 GENIUS_API_KEY = "zlLXxVHvFP9m91KbcoFngc7wYNlARc1n44AHqV_Js43dO-8HMnrV8p4AmomQP_te"
 
-st.image("/Lyric_Busca/LETRAS_MUSICA/Wallpaper-anime-girl-BW.png", width=800)
+st.image("./Wallpaper-anime-girl-BW.png", width=800)
 st.title("Fácil Music :blue[_Lyrics_]")
 
 def buscar_info_musica(musica):
