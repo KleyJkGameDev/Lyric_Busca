@@ -1,0 +1,2 @@
+API_TOKEN = "zlLXxVHvFP9m91KbcoFngc7wYNlARc1n44AHqV_Js43dO-8HMnrV8p4AmomQP_te"
+APP_NAME = "Lyric_Busca"
