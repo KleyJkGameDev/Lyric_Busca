@@ -1,12 +1,8 @@
 import requests
 import streamlit as st
 from bs4 import BeautifulSoup
-from rauth import OAuth2Service
 
 GENIUS_API_KEY = "2i1cVxOm1Srv_wNcvvdWiP5qcAkSxGoCNqbJqcCkgByJtXdWH2Q8tFNHUiHBLIbk"
-CLIENT_ID = "xR2EEjqrzZ6leX2a9eMg1M9KGjGHZERacYCtANhyORBI8o_BGHv-a7yuzkl4_d-W"
-CLIENT_SECRET = "lZ6Y-nazABkdRaSQ3NADI6M-5QeOOW55J3PnyMkU-0PI4IrtgHTlD3jSGbyge3KLW5VKrRabjEjfhoBsWFajGw"
-
 
 st.image("LETRAS_MUSICA/Wallpaper-anime-girl-BW.png", width=800)
 st.title("Fácil Music :blue[_Lyrics_]")
@@ -15,9 +11,7 @@ st.title("Fácil Music :blue[_Lyrics_]")
 
 def buscar_info_musica(musica):
     """Busca a URL da música no Genius usando a API, sem priorizar o artista"""
-    headers = {"Authorization": f"Bearer {GENIUS_API_KEY}",
-                   "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-}
+    headers = {"Authorization": f"Bearer {GENIUS_API_KEY}"}
     search_url = "https://api.genius.com/search"
     params = {"q": musica}
 
