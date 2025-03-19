@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 from bs4 import BeautifulSoup
 
-GENIUS_API_KEY = "2i1cVxOm1Srv_wNcvvdWiP5qcAkSxGoCNqbJqcCkgByJtXdWH2Q8tFNHUiHBLIbk"
+GENIUS_API_KEY = "ivC3YHgH3EaafWyvbw7adH4EzlZThdyttiqeYy2-R5bkTTy4VDIfPbSw8W8107zP"
 
 st.image("LETRAS_MUSICA/Wallpaper-anime-girl-BW.png", width=800)
 st.title("Fácil Music :blue[_Lyrics_]")
