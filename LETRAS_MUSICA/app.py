@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 
 GENIUS_API_KEY = "5S7w9y0JSdNf7jzSl5IJqcWu0PKsaVtCpIHSq3L2ZRiwmJt8r14YbZMc7p5W5ilz"
 
+
 st.image("LETRAS_MUSICA/Wallpaper-anime-girl-BW.png", width=800)
 st.title("Fácil Music :blue[_Lyrics_]")
 
@@ -16,7 +17,7 @@ def buscar_info_musica(musica):
     response = requests.get(search_url, headers=headers, params=params)
     
     if response.status_code != 200:
-        st.error("Erro ao acessar a API do Genius.")
+        st.error(f"Erro ao acessar a API do Genius. Status Code: {response.status_code}")
         return None, None
 
     data = response.json()
