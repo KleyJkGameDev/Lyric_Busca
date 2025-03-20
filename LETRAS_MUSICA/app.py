@@ -13,7 +13,8 @@ def buscar_info_musica(musica):
     """Busca a URL da música no Genius usando a API, sem priorizar o artista"""
     headers = {"Authorization": f"Bearer {GENIUS_API_KEY}"}
     search_url = "https://api.genius.com/search"
-    params = {"q": musica}
+    #params = {"q": musica}
+    params = musica
 
     response = requests.get(search_url, headers=headers, params=params)
     
