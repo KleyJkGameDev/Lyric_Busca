@@ -13,10 +13,9 @@ def buscar_info_musica(musica):
     """Busca a URL da música no Genius usando a API, sem priorizar o artista"""
     headers = {"Authorization": f"Bearer {GENIUS_API_KEY}"}
     search_url = "https://api.genius.com/search"
-    #params = {"q": musica}
-    params = musica
+    params = {"q": musica}
 
-    response = requests.get(search_url, headers=headers, params=params)
+    response = requests.get(search_url, params=params, headers=headers)
     
     if response.status_code != 200:
         st.error(f"Erro ao acessar a API do Genius. Status Code: {response.status_code}")
